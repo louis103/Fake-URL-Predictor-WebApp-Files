@@ -11,7 +11,7 @@ DB_NAME = "Urls.db"
 def create_app():
     app = Flask(__name__)
     CORS(app)
-    app.config['SECRET_KEY'] = "yqXD-r0oh-S3OI_S8PFL9Voo2_A"
+    app.config['SECRET_KEY'] = ""
     app.config['SQLALCHEMY_DATABASE_URI'] = f"sqlite:///{DB_NAME}"
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
     db.init_app(app)
